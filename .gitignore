@@ -50,3 +50,6 @@ target/classes/com/epam/concurrent/Calculator$Function.class
 *.class
 .idea/workspace.xml
 Concurrent.iml
+.idea/copyright/profiles_settings.xml
+.idea/misc.xml
+.idea/vcs.xml
