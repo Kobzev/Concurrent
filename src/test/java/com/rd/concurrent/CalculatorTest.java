@@ -1,4 +1,4 @@
-package com.epam.concurrent;
+package com.rd.concurrent;
 
 import org.junit.Test;
 

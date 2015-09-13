@@ -1,15 +1,15 @@
-package com.epam.concurrent;
+package com.rd.concurrent;
 
 /**
  * Created by Konstiantyn on 9/4/2015.
  */
-public class ProducerConcumer {
+public class ProducerConsumer {
     public static void main(String... args){
         Queue queue = new Queue();
 
         for (int i=0; i<4; i++){
-            Producer producer = new Producer(queue);
-            Consumer consumer = new Consumer(queue);
+            Producer1 producer = new Producer1(queue);
+            Consumer1 consumer = new Consumer1(queue);
 
             producer.start();
             consumer.start();
@@ -24,10 +24,10 @@ public class ProducerConcumer {
 
 }
 
-class Producer extends Thread{
+class Producer1 extends Thread{
     private Queue queue;
 
-    public Producer(Queue queue){
+    public Producer1(Queue queue){
         this.queue = queue;
     }
 
@@ -56,10 +56,10 @@ class Producer extends Thread{
 
 }
 
-class Consumer extends Thread{
+class Consumer1 extends Thread{
     private Queue queue;
 
-    public Consumer(Queue queue){
+    public Consumer1(Queue queue){
         this.queue = queue;
     }
 

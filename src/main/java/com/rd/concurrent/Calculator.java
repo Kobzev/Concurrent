@@ -1,4 +1,4 @@
-package com.epam.concurrent;
+package com.rd.concurrent;
 
 /**
  * Created by Konstiantyn on 9/2/2015.

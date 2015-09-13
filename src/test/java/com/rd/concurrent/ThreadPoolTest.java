@@ -1,10 +1,9 @@
-package com.epam.concurrent;
+package com.rd.concurrent;
 
 import org.junit.Test;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
 
 /**

@@ -1,4 +1,4 @@
-package com.epam.concurrent;
+package com.rd.concurrent;
 
 import java.util.LinkedList;
 
@@ -52,16 +52,16 @@ public class ThreadPool {
                     while (tasks.isEmpty()) {
                         try{
                             tasks.wait();
-                        } catch (InterruptedException ignored){}
+                        } catch (InterruptedException ignored){ return; }
                     }
                     r = tasks.removeFirst();
-                    tasks.notify();
+                    //tasks.notify();
                 }
 
                 if (r != null) {
                     try{
                         r.run();
-                    }catch (RuntimeException e){e.printStackTrace();}
+                    }catch (Exception e){e.printStackTrace();}
                 }
             }
         }

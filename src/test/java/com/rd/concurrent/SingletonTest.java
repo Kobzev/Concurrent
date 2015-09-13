@@ -1,8 +1,6 @@
-package com.epam.concurrent;
+package com.rd.concurrent;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by Konstiantyn on 9/4/2015.
